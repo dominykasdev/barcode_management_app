@@ -6,6 +6,7 @@ import SnackBar from "./components/SnackBar";
 import BarcodeForm from "./components/BarcodeForm";
 import DataContext from "./Contexts/DataContext";
 import BarcodeList from "./components/BarcodeList";
+import { Container } from "@mui/material";
 
 function App() {
   const [openSnackBar, setOpenSnackBar] = useState<boolean>(false);
@@ -37,8 +38,21 @@ function App() {
           setSnackBarMessage,
         }}
       >
-        {barcodeArray && <BarcodeForm />}
-        <BarcodeList />
+        <Container
+          sx={{
+            display: "flex",
+            width: "100%",
+            height: "100%",
+            justifyContent: "space-evenly",
+            alignItems: "stretch",
+            flexDirection: "row",
+            margin: "auto",
+          }}
+        >
+          {barcodeArray && <BarcodeForm />}
+          <BarcodeList />
+        </Container>
+
         <SnackBar />
       </DataContext.Provider>
     </div>

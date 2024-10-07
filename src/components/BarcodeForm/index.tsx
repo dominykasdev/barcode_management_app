@@ -64,8 +64,7 @@ const BarcodeForm = () => {
   return (
     <form
       style={{
-        position: "absolute",
-        width: "100%",
+        width: "50%",
         height: "100%",
         display: "flex",
         flexDirection: "column",
@@ -90,7 +89,12 @@ const BarcodeForm = () => {
           setNotDuplicate(true);
         }}
       ></TextField>
-      <Button type="submit" disabled={barcode.trim() === ""}>
+      <Button
+        type="submit"
+        variant="contained"
+        disabled={barcode.trim() === ""}
+        sx={{ margin: "10px" }}
+      >
         Submit
       </Button>
     </form>

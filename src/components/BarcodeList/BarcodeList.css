@@ -1,0 +1,14 @@
+.barcodeItem:last-child {
+  animation-name: initialised;
+  animation-duration: 2s;
+  animation-delay: 1ms;
+}
+
+@keyframes initialised {
+  from {
+    background-color: aqua;
+  }
+  to {
+    background-color: #fff;
+  }
+}
