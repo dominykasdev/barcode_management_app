@@ -1,3 +1,16 @@
+# Submission by Dominykas Genys for AB
+
+To run this project you need the latest Node version installed.
+
+## How to run
+
+1. Clone the repo to your local machine.
+2. Install the NPM packages with `npm i`
+3. Launch the app using `npm start`
+4. Test the app using `npm test`
+
+For any issues running this project please contact me [here](mailto:contact@dominykas.dev)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
